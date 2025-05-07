@@ -1,0 +1,55 @@
+Here's a clean and well-structured `PS-13.readme` file formatted in Markdown, ready to be uploaded to GitHub:
+
+---
+
+### ?? PS-13: Connect to AWS EC2 Instance Using PuTTY on Windows
+
+#### ?? Steps to Launch and Connect:
+
+1. **Log In** to AWS Console
+2. Click on **EC2**
+3. Click on **Launch EC2 Instance**
+4. Give your **Instance a Name**
+5. Leave other default settings (Storage, AMI, etc.) as they are
+6. Under **Key Pair (login)**, click on **Create Key Pair**
+7. Provide a key name (e.g., `putty-ex`)
+8. Select **.ppk** format for PuTTY
+9. Click **Create Key Pair**
+   ? The key will be downloaded automatically. **Save it securely** (e.g., `Desktop/key/Gaurav-Putty.ppk`)
+10. Click **Launch Instance**
+11. Go to **Instance Dashboard**
+12. Select the instance ? Click on **Connect**
+13. Choose the **EC2 Instance Connect** tab
+14. **Copy the Public IPv4 address** (e.g., `3.109.XX.XX`)
+
+---
+
+#### ?? Connect Using PuTTY:
+
+15. Open **PuTTY**
+16. Under **Host Name**, enter:
+
+    ```
+    ec2-user@<your-ec2-public-ip>
+    ```
+
+    Example:
+
+    ```
+    ec2-user@3.109.XX.XX
+    ```
+17. In the left panel, go to:
+    `Connection > SSH > Auth > Credentials`
+18. Under **Private key file for authentication**, click **Browse** and select your `.ppk` file (e.g., `Gaurav-Putty.ppk`)
+19. Go back to the **Session** tab (top of sidebar)
+20. Under **Saved Sessions**, type a session name (e.g., `Gaurav-EC2-Putty`)
+21. Click **Save**
+22. Select the saved session and click **Open**
+23. You may get a **PuTTY Security Alert** ? Click **Yes**
+24. ? **You're now remotely accessing your EC2 instance via PuTTY!**
+
+---
+
+**All Set..! ??**
+
+Let me know if you'd like a `commands.txt` or screenshot instructions as well.
