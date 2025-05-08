@@ -53,10 +53,6 @@ A\* is an informed search algorithm that effectively combines **greedy** and **D
 CODE 
 ---
 
-Absolutely, Gaurav! Let's break down your **A\* algorithm implementation for the 8-queens problem**, **section by section**, so you deeply understand how each part works.
-
----
-
 ## 🧠 Goal of the Program
 
 Solve the **8-Queens Problem** using **A\*** Search Algorithm, where:
